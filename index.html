@@ -10,11 +10,26 @@
     <body>
         <section class="grid-con center-grid-con pic-el">
             <h2>Picture Element</h2>
-            <picture class="col-span-full">
+            <picture class="col-span-full m-col-span-10">
                 <source srcset="images/prs-top.jpg" media="(min-width: 768px)" alt="prs guitar top">
                 <img src="images/prs-back.jpg" alt="prs guitar back">
             </picture>
         </section>
+
+         <section class="grid-con center-grid-con">
+            <div class="col-span-full">
+                <h2>Srcset Attribute</h2>
+                <img
+                    sizes="(max-width: 1200px) 100vw, 1200px"
+                    srcset="
+                    images/les-paul_ywn6xo_c_scale,w_270.jpg 270w,
+                    images/les-paul_ywn6xo_c_scale,w_961.jpg 961w,
+                    images/les-paul_ywn6xo_c_scale,w_1200.jpg 1200w"
+                    src="images/les-paul_ywn6xo_c_scale,w_1200.jpg"
+                    alt="les paul guitar">
+            </div>
+        </section>
+
         <script src="js/main.js"></script>   
     </body>
 </html>
