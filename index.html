@@ -10,7 +10,7 @@
     <body>
         <section class="grid-con center-grid-con pic-el">
             <h2>Picture Element</h2>
-            <picture class="col-span-full m-col-span-10">
+            <picture class="col-span-full">
                 <source srcset="images/prs-top.jpg" media="(min-width: 768px)" alt="prs guitar top">
                 <img src="images/prs-back.jpg" alt="prs guitar back">
             </picture>
@@ -18,7 +18,7 @@
 
          <section class="grid-con center-grid-con">
             <div class="col-span-full">
-                <h2>Srcset Attribute</h2>
+                <h2>Image Tag & Srcset Attribute</h2>
                 <img
                     sizes="(max-width: 1200px) 100vw, 1200px"
                     srcset="
@@ -29,7 +29,11 @@
                     alt="les paul guitar">
             </div>
         </section>
-
+        <section class="grid-con center-grid-con bg-img">
+            <h2>Background image CSS</h2>
+            <div class="col-span-full" id="tele-img">
+            </div>
+        </section>
         <script src="js/main.js"></script>   
     </body>
 </html>
